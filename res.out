@@ -1,0 +1,60 @@
+@DearAssistant
+{u'user': {u'id_str': u'1249693405', u'screen_name': u'DearAssistant'}, u'categories': {u'network': 0.49, u'sentiment': 0.74, u'temporal': 0.68, u'content': 0.54, u'user': 0.48, u'friend': 0.77}, u'scores': {u'universal': 0.49, u'english': 0.56}}
+0.56
+0.49
+@WhatTheFare
+{u'user': {u'id_str': u'3303517698', u'screen_name': u'WhatTheFare'}, u'categories': {u'network': 0.53, u'sentiment': 0.57, u'temporal': 0.46, u'content': 0.49, u'user': 0.46, u'friend': 0.62}, u'scores': {u'universal': 0.51, u'english': 0.52}}
+0.52
+0.51
+@dscovr_epic
+{u'user': {u'id_str': u'4010618585', u'screen_name': u'dscovr_epic'}, u'categories': {u'network': 0.59, u'sentiment': 0.36, u'temporal': 0.43, u'content': 0.28, u'user': 0.5, u'friend': 0.75}, u'scores': {u'universal': 0.39, u'english': 0.31}}
+0.31
+0.39
+@pentametron
+{u'user': {u'id_str': u'516047986', u'screen_name': u'pentametron'}, u'categories': {u'network': 0.4, u'sentiment': 0.54, u'temporal': 0.61, u'content': 0.49, u'user': 0.61, u'friend': 0.58}, u'scores': {u'universal': 0.44, u'english': 0.47}}
+0.47
+0.44
+@_grammar_
+{u'user': {u'id_str': u'618294231', u'screen_name': u'_grammar_'}, u'categories': {u'network': 0.59, u'sentiment': 0.58, u'temporal': 0.35, u'content': 0.52, u'user': 0.42, u'friend': 0.49}, u'scores': {u'universal': 0.35, u'english': 0.55}}
+0.55
+0.35
+
+@AnnaKendrick47
+{u'user': {u'id_str': u'59949396', u'screen_name': u'AnnaKendrick47'}, u'categories': {u'network': 0.57, u'sentiment': 0.21, u'temporal': 0.38, u'content': 0.34, u'user': 0.46, u'friend': 0.37}, u'scores': {u'universal': 0.46, u'english': 0.46}}
+0.46
+0.46
+@VancityReynolds
+{u'user': {u'id_str': u'2893511188', u'screen_name': u'VancityReynolds'}, u'categories': {u'network': 0.58, u'sentiment': 0.24, u'temporal': 0.46, u'content': 0.17, u'user': 0.4, u'friend': 0.56}, u'scores': {u'universal': 0.49, u'english': 0.49}}
+0.49
+0.49
+@cher
+{u'user': {u'id_str': u'124003770', u'screen_name': u'cher'}, u'categories': {u'network': 0.51, u'sentiment': 0.38, u'temporal': 0.38, u'content': 0.35, u'user': 0.49, u'friend': 0.22}, u'scores': {u'universal': 0.35, u'english': 0.33}}
+0.33
+0.35
+@JamesBlunt
+{u'user': {u'id_str': u'82097756', u'screen_name': u'JamesBlunt'}, u'categories': {u'network': 0.49, u'sentiment': 0.18, u'temporal': 0.61, u'content': 0.26, u'user': 0.43, u'friend': 0.45}, u'scores': {u'universal': 0.47, u'english': 0.46}}
+0.46
+0.47
+@robdelaney
+{u'user': {u'id_str': u'22084427', u'screen_name': u'robdelaney'}, u'categories': {u'network': 0.34, u'sentiment': 0.16, u'temporal': 0.38, u'content': 0.22, u'user': 0.34, u'friend': 0.45}, u'scores': {u'universal': 0.44, u'english': 0.45}}
+0.45
+0.44
+
+@realDonaldTrump
+{u'user': {u'id_str': u'25073877', u'screen_name': u'realDonaldTrump'}, u'categories': {u'network': 0.59, u'sentiment': 0.25, u'temporal': 0.3, u'content': 0.41, u'user': 0.35, u'friend': 0.39}, u'scores': {u'universal': 0.5, u'english': 0.52}}
+0.52
+0.5
+@DeepDrumpf
+{u'user': {u'id_str': u'705113652471439361', u'screen_name': u'DeepDrumpf'}, u'categories': {u'network': 0.53, u'sentiment': 0.86, u'temporal': 0.72, u'content': 0.53, u'user': 0.57, u'friend': 0.5}, u'scores': {u'universal': 0.53, u'english': 0.49}}
+0.49
+0.53
+
+@sunneversets100
+{u'user': {u'id_str': u'798264883062206469', u'screen_name': u'sunneversets100'}, u'categories': {u'network': 0.75, u'sentiment': 0.45, u'temporal': 0.7, u'content': 0.4, u'user': 0.6, u'friend': 0.5}, u'scores': {u'universal': 0.54, u'english': 0.555}}
+0.555
+0.54
+@BlackManTrump
+{u'user': {u'id_str': u'769810679016464384', u'screen_name': u'BlackManTrump'}, u'categories': {u'network': 0.52, u'sentiment': 0.28, u'temporal': 0.08, u'content': 0.49, u'user': 0.14, u'friend': 0.31}, u'scores': {u'universal': 0.35, u'english': 0.38}}
+0.38
+0.35
+

@@ -13,11 +13,27 @@ bom = botometer.Botometer(wait_on_ratelimit=True,
 
 # Check a single account
 result = bom.check_account('@clayadavis')
-print result
+# print result
 # Check a sequence of accounts
-accounts = ['@clayadavis', '@onurvarol', '@jabawack', '@ZephrFish', '@DeepDrumpf', '@OfficialKat']
-for screen_name, result in bom.check_accounts_in(accounts):
-    # Do stuff
-    pass
-    print screen_name
-    print result
+# accounts = ['@clayadavis', '@onurvarol', '@jabawack', '@ZephrFish', '@DeepDrumpf', '@OfficialKat']
+
+bots = ['@DearAssistant', '@WhatTheFare', '@dscovr_epic', '@pentametron', '@_grammar_']
+
+celebrities = ['@AnnaKendrick47', '@VancityReynolds', '@cher', '@JamesBlunt', '@robdelaney']
+
+additional = ['@sunneversets100', '@BlackManTrump']
+
+trumps = ['@realDonaldTrump', '@DeepDrumpf']
+
+accounts = [bots, celebrities, trumps, additional]
+
+
+for i in accounts:
+    for screen_name, result in bom.check_accounts_in(i):
+        # Do stuff
+        pass
+        print screen_name
+        print result
+        print result['scores']['english']
+        print result['scores']['universal']
+    print ""
