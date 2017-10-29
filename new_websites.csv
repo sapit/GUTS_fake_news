@@ -1,12 +1,12 @@
 Name,Twitter,URL
 Economist,@TheEconomist,https://www.economist.com/
-Routers,@Reuters,https://uk.reuters.com/
+Reuters,@Reuters,https://uk.reuters.com/
 BBC,@BBCnews,http://www.bbc.co.uk/
 NPR,@NPR,http://www.npr.org/
 PBS,@PBS,http://www.pbs.org/
 Guardian,@guardian,https://www.theguardian.com/
 Wall Street Journal,@WSJ,https://www.wsj.com/
-Latimes,@latimes,http://www.latimes.com/hp-2/
+Latimes,@latimes,http://www.latimes.com/
 Dallas Morning News,@dallasnews,https://www.dallasnews.com/
 Local,@Local12,https://www.thelocal.com/corporate/
 Politico,@politico,https://www.politico.com/
@@ -17,8 +17,8 @@ Time,@TIME,"http://time.com/"
 Seattle Times,@seattletimes,https://www.seattletimes.com/
 Kansas City Star,@KCStar,http://www.kansascity.com/
 New York Times,@nytimes,https://www.nytimes.com/
-ITV News,@itvnews,http://www.itv.com/news/
-Channel 4 News,@Channel4News,https://www.channel4.com/news/
+ITV News,@itvnews,http://www.itv.com/
+Channel 4 News,@Channel4News,https://www.channel4.com/
 The Financial Times,@FinnacialTimes,https://www.ft.com/
 The Independent,@Independent,http://www.independent.co.uk/
 The Telegraph,@Telegraph,http://www.telegraph.co.uk/
@@ -32,21 +32,16 @@ NBC,@nbc,https://www.nbc.com/
 Buzzfeed,@BuzzFeed,https://www.buzzfeed.com/
 Breitbart,@BreitbartNews,http://www.breitbart.com/
 Infowars,@infowars,https://www.infowars.com/
-Blaze,,
 Fox,@FoxNews,http://www.foxnews.com/
 CBS,@cbs,http://www.cbs.com/
-Huffington Post ,,
 ABC,@ABC,http://abcnews.go.com/
-Occupy Democrats,,
-Yahoo,@yahoo,https://www.yahoo.com/news/
-Limbaugh,,
-AmericanNews,@AmericanNews,www.AmericanNews.com/
-BigAmericanNews,@BigAmericanNews,www.BigAmericanNews.com/
-Cap News,@capnews,
-Christ Wire,@christwire,www.ChristWire.org/
-Civic Tribune,,www.CivicTribune.com/
-ClickHole,@ClickHole,www.ClickHole.com/
-CreamBMP,@CreamBMP,www.CreamBMP.com
-DCGazette,@DCGazette,www.DCGazette.com/
-DailyCurrant,@dailycurrant,www.DailyCurrant.com/
-Drudge Report,@DRUDGE_REPORT,www.DrudgeReport.com.co/
+Yahoo,@yahoo,https://www.yahoo.com/
+AmericanNews,@AmericanNews,https://www.americannews.com/
+BigAmericanNews,@BigAmericanNews,https://www.bigamericanNews.com/
+Christ Wire,@christwire,https://www.christwire.org/
+Civic Tribune,,https://www.civictribune.com/
+ClickHole,@ClickHole,https://www.clickhole.com/
+CreamBMP,@CreamBMP,https://www.creambmp.com/
+DCGazette,@DCGazette,https://www.dcgazette.com/
+DailyCurrant,@dailycurrant,https://www.dailycurrant.com/
+Drudge Report,@DRUDGE_REPORT,https://www.drudgereport.com/

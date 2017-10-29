@@ -1,5 +1,5 @@
-google_api_key = "AIzaSyA4kA3oZzCZDSufbgbBl8huaJdmPBNpgzc"
-google_cse = "000051772611951131564:je8vhvjiizi"
+google_api_key = "AIzaSyCNOjl3325kaVW1ggkaBRUTOfrVU_w5fi8"
+google_cse = "013423243973335134068:mkdiyxdnke8"
 
 from googleapiclient.discovery import build
 
@@ -12,19 +12,19 @@ def google_get_result_links(query):
             q=query,
             cx=google_cse
         ).execute()
-
-    print result.keys()
+    # result = result[:5]
+    # print result.keys()
     # print result['kind']
-    try:
-        print result["items"][0].keys()
-    except:
-        return []
+    # try:
+    #     print result["items"][0].keys()
+    # except:
+    #     return []
 
     links = []
-    for i in range(len(result['items'])):
+    for i in range(min(len(result['items']), 5)):
         # print result["items"][i]['title']
         # print result["items"][i]['snippet']
-        print result["items"][i]['link']
+        # print result["items"][i]['link']
         # print result["items"][i]['displayLink']
         l = result["items"][i]['displayLink'].encode("utf-8")
         if l[len(l)-1] != '/':
@@ -36,4 +36,4 @@ def google_get_result_links(query):
 
 if __name__=="__main__":
     q = "Bootsy Collins: LSD was a big part of why I left James Browns band"
-    print google_get_result_links(q)
+    # print google_get_result_links(q)

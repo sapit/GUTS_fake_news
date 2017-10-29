@@ -1,0 +1,248 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+   <HEAD>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous">
+        </script>
+        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+        
+
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+          google.charts.load("current", {packages:["corechart"]});
+          // google.charts.setOnLoadCallback(drawChart);
+          function drawChart(title, botChance, id_selector) {
+            var data = google.visualization.arrayToDataTable([
+              ['Category', 'Percentage'],
+              ['Bot',     botChance],
+              ['Not Bot', 1-botChance],
+              // ['Commute',  2],
+              // ['Watch TV', 2],
+              // ['Sleep',    7]
+            ]);
+    
+            var options = {
+              title: title,
+              pieHole: 0.4,
+            };
+    
+            var chart = new google.visualization.PieChart(document.getElementById(id_selector));
+            chart.draw(data, options);
+
+            // var chart2 = new google.visualization.PieChart(document.getElementById('donutchart2'));
+            // chart2.draw(data, options);
+          }
+        </script>
+      <TITLE>Bots detection system</TITLE>
+      <style>
+        /* .row.no-pad {
+          margin-right:0;
+          margin-left:0;
+        }
+        .row.no-pad > [class*='col-'] {
+          padding-right:0;
+          padding-left:0;
+        } */
+
+        .row.no-gutters {
+          margin-right: 0;
+          margin-left: 0;
+        }
+        .row.no-gutters  [class^="col-"],
+        .row.no-gutters  [class*=" col-"] {
+          padding-right: 0;
+          padding-left: 0;
+        }
+        .card{
+          padding: 10px 5px
+        }
+      </style>
+   </HEAD>
+   <BODY>
+      <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+                  <h3 style="text-align: center; margin: 10px 0;padding: 5px 0"> <u><i> Please enter the profile you would like to check:</i> </u></h3>
+            </div>
+            </div>
+
+            <div class="col-md-12">
+              <div class="row">
+                  <div class="input-group col-md-6 text-right">
+                    <input type="text" class="form-control twitter-name" placeholder="Search for a post/account..." aria-label="Search for...">
+                    <span class="input-group-btn">
+                      <button class="btn btn-outline-primary go-button">Go</button>
+                    </span>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="alert alert-success is-bot" style="display: none; margin-bottom: 0">
+                      This is a bot/not a bot
+                    </div>
+                  </div>
+              </div>
+            </div>
+              <div class="col-md-12">
+                <div class="row account-details" style="display: none">
+                  <div class="col-md-12">
+                    <!-- <div class="card"> -->
+                      <!-- <div class="card-body"> -->
+                          <h3 class="card-title acc-name" style="text-align: center; margin: 13px  0">Account name</h4>
+                          <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+                      <!-- </div> -->
+                    <!-- </div> -->
+                  </div>
+                </div>
+              </div>
+            <div> <br> </div>
+          <!-- </div> -->
+            <div class='col-md-12'>
+              <div class="alert alert-primary" role="alert">
+                <h3> Bot analysis output: </h3>
+              </div>
+            </div>
+            <!-- <div class="row"> -->
+              
+            <!-- </div> -->
+          <div class="row">
+            <div id="chartContainer" style="height: 300px; width: 100%; display: none"></div>
+          </div>
+          <div class="row">
+              <div class="col-md-6">
+                <div id="donutchart" style=" display: none"></div>
+              </div>
+              <div class="col-md-6">                  
+                <div id="donutchart2" style="display: none"></div>
+              </div>
+          </div>
+          <div class=" col-md-12">
+              <div class="alert alert-primary" role="alert">
+                <h3> Fake news analysis output: </h3>
+              </div>
+          </div>
+          <div class="col-md-12 tweets">
+            
+            </div>
+      <!-- </div> -->
+   </BODY>
+   <script type="text/javascript">
+      var hidden_elements = [".is-bot", ".account-details", "#chartContainer", "#donutchart","#donutchart2"]
+      // window.onload = function () {
+      is_bot = function(score){
+          $(".is-bot").removeClass("alert-success");
+          $(".is-bot").removeClass("alert-warning");
+          $(".is-bot").removeClass("alert-danger");
+          // console.log(score);
+          if(score < 0.40){
+              $(".is-bot").addClass("alert-success");
+              $(".is-bot").text("This is probably not a bot(or is a very good one")
+          }
+          else if (score >=0.40 && score <= 0.60){
+              $(".is-bot").addClass("alert-warning");
+              $(".is-bot").text("This might be a bot")              
+          }
+          else{
+              $(".is-bot").addClass("alert-danger");          
+              $(".is-bot").text("This is most-probably a bot")
+          }
+                  
+      }
+      draw_bar_chart = function (categories) {
+        var data = []
+        for (var i in categories){
+          data.push({label:i, y:categories[i]})
+        }
+
+        console.log(data);
+
+        var chart = new CanvasJS.Chart("chartContainer", {
+          title:{
+            text: ""              
+          },
+          data: [
+          {
+            type: "column",
+            dataPoints : data
+          }
+          ]
+          // data: data
+        });
+        chart.render();
+      }
+      $(".go-button").on("click", function(){
+        var val = $(".twitter-name").val();
+        $(".twitter-name").val("");
+        val = val.trim();
+        if(val=="")
+          return 0;
+        // console.log(val)
+        var url="/check_account"
+        var data = {"user" : val}
+
+        var callback = function(data){
+            console.log(data);
+
+            var acc = data["account"]
+            var pt = data["processed_tweets"]
+            // console.log(acc);
+            // console.log(pt);
+            var time = 0;
+
+            for(var i=0; i<hidden_elements.length; i++ ){
+              time = 500 * (i+1);
+              // console.log(time);
+              $(hidden_elements[i]).fadeIn();
+              // window.setTimeout(function(){$(hidden_elements[i]).fadeIn()},0) 
+            }
+            draw_bar_chart(acc["categories"])
+            var max_score = -1;
+            var c = 0;
+            var donuts = ["donutchart", "donutchart2"]
+            for(var i in acc["scores"]){
+                if(max_score < acc["scores"][i])
+                    max_score = acc["scores"][i];
+                drawChart(i,acc["scores"][i],donuts[c]);
+                c++;
+            }
+            
+            is_bot(max_score);
+            $(".acc-name").text(acc["user"]["screen_name"])
+            
+            for(var i in pt)
+            {
+              var labels = ["Trustworthy links in tweet", "Untrustworthy links in tweet", "Unknown links in tweet",
+                                "Matching trustworthy search result urls", "Matching untrustworthy search result urls", "Unknown search results"]
+              var inner_content="";
+              for(var j=1; j<pt[i].length; j++){
+                  
+                  inner_content += "<div>" + labels[j-1] + ": " + pt[i][j].length + " &lt" + pt[i][j].join(', ') + "&gt" + "</div>";
+              }
+              var tweet = `<div class="card">
+                            <div class="card-block">
+                              ${pt[i][0]}
+                              ${inner_content}
+                            </div>
+                          </div>`
+
+              $(".tweets").append(tweet);
+            }
+            
+        }
+        // console.log(data);
+        $.ajax({
+          type: "POST",
+          url: url,
+          data: JSON.stringify(data, null, '\t'),
+          contentType: 'application/json;charset=UTF-8',
+          success: callback,
+          dataType: 'json'
+        });
+      })
+    </script>
+</HTML>

@@ -2,3 +2,9 @@ __pycache__/
 *.py[cod]
 .vscode/
 venv
+bbc/
+660_webhose-2015-10-new_20170904095249
+checkpoints/
+fake_or_real_news/
+news/
+fake_titles.csv
