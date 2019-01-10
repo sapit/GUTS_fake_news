@@ -48,7 +48,7 @@ def model(X, Y, Xtest=[],Ytest=[]):
 	# model.add(Dense(1, activation='linear'))
     model.add(Dense(2, activation='softmax'))
 
-    sgd = SGD(lr=0.03, decay=1e-6, momentum=0.9, nesterov=True)
+    sgd = SGD(lr=0.08, decay=1e-6, momentum=0.9, nesterov=True)
     model.compile(loss='categorical_crossentropy',
             optimizer=sgd,
             metrics=['accuracy'])
@@ -62,5 +62,6 @@ def model(X, Y, Xtest=[],Ytest=[]):
     score = model.evaluate(x_test, y_test, batch_size=32)
     print score
 
-model(X, Y, fale_df_text, [[0,1] for i in fale_df_text])
+# model(X, Y, fale_df_text, [[0,1] for i in fale_df_text])
+model(X, Y)
 
